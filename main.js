@@ -39,12 +39,7 @@ let urlTop = 'https://newsapi.org/v2/top-headlines?country=ar';
 
 const getCategoryNews = async (categoria, cantidad, pagina) => {
   const response = await fetch(
-    `${urlTop}&category=${categoria}&pageSize=${cantidad}&page=${pagina}`,
-    {
-      headers: {
-        'X-Api-Key': `${apiKey}`,
-      },
-    }
+    `${urlTop}&category=${categoria}&pageSize=${cantidad}&page=${pagina}&apiKey=${apiKey}`
   );
   const data = await response.json();
   const news = data.articles;
@@ -53,12 +48,7 @@ const getCategoryNews = async (categoria, cantidad, pagina) => {
 
 const getEveryNews = async (termino, pagina) => {
   const response = await fetch(
-    `https://newsapi.org/v2/everything?q=${termino}&language=es&sortBy=popularity&pageSize=6&page=${pagina}`,
-    {
-      headers: {
-        'X-Api-Key': `${apiKey}`,
-      },
-    }
+    `https://newsapi.org/v2/everything?q=${termino}&language=es&sortBy=popularity&pageSize=6&page=${pagina}&apiKey=${apiKey}`
   );
   const data = await response.json();
   const news = data;
