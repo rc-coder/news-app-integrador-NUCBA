@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <script
+      src="https://kit.fontawesome.com/bf9c3d7310.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>PopNews SingIn</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav
+      class="navbar sticky-md-top navbar-expand-md navbar-dark bg-dark mt-2"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./img/website-2151053_640.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          PopNews
+        </a>
+      </div>
+    </nav>
+    <!-- form -->
+    <div class="container p-5">
+      <h2 class="pb-5">¡Unete y recibe las noticias mas importantes!</h2>
+      <form
+        name="userForm"
+        class="row g-3 border border-danger border-2 rounded p-3"
+      >
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault01"
+            placeholder="Tu nombre"
+            value=""
+            name="nombre"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault02"
+            placeholder="Tu apellido"
+            value=""
+            name="apellido"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label"
+            >Usuario</label
+          >
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefaultUsername"
+              aria-describedby="inputGroupPrepend2"
+              name="usuario"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">e-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="validationDefault03"
+            name="email"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label"
+            >¿Cual es tu hobby?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault03"
+            name="hobby"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck2"
+              name="check"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck2">
+              Si, quiero unirme a PopNews!
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-danger" type="submit">Unirme</button>
+        </div>
+      </form>
+    </div>
+    <!-- footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          class="navbar-brand mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          href="#"
+        >
+          <img
+            src="./img/website-2151053_640.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          PopNews
+        </a>
+        <span class="text-muted">© 2022 PopNews, Inc</span>
+      </div>
+
+      <div class="post-share-btn-group">
+        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+  </body>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/login.js"></script>
+</html>

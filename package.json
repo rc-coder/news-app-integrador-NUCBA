@@ -1,0 +1,23 @@
+{
+  "name": "news-app-integrador-nucba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rc-coder/news-app-integrador-NUCBA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rc-coder/news-app-integrador-NUCBA/issues"
+  },
+  "homepage": "https://github.com/rc-coder/news-app-integrador-NUCBA#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

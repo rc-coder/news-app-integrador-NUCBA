@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <script
+      src="https://kit.fontawesome.com/bf9c3d7310.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>NewsAPP LogIn</title>
+  </head>
+  <!-- original -->
+  <body>
+    <div class="container">
+      <header>
+        <nav
+          class="navbar sticky-md-top navbar-expand-md navbar-dark bg-dark mt-2"
+          aria-label="Fourth navbar example"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./img/website-2151053_640.png"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              PopNews
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample04"
+              aria-controls="navbarsExample04"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#populares">Populares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#ultimas">Ultimas noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mas">Más noticias</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown04"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Categorías</a
+                  >
+                  <!-- business entertainment health science sports technology -->
+                  <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="business"
+                        >Negocios</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-category="entertainment"
+                        >Entretenimiento</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="health"
+                        >Salud</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="science"
+                        >Ciencia</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="sports"
+                        >Deportes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-category="technology"
+                        >Technologia</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form
+                class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+                name="formBusqueda"
+              >
+                <input
+                  type="search"
+                  name="busqueda"
+                  class="form-control"
+                  placeholder="Ingresa una palabra clave"
+                  aria-label="Search"
+                  maxlength="20"
+                  spellcheck="true"
+                  size="25"
+                />
+              </form>
+              <!-- User -->
+              <a id="user" href="#" class="nav-link text-white">
+                <i class="fa-solid fa-user-slash"></i>
+                Invitado
+              </a>
+              <button
+                id="logBtn"
+                type="button"
+                class="btn btn-success"
+                onclick="location.href = './sing_in.html'"
+              >
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main class="container mt-4">
+      <div class="row catagory-welcome-post-area" id="main-container">
+        <!-- Carousel -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div id="carousel" class="carousel-inner">
+            <div id="carousel-item-1" class="carousel-item active">
+              <div class="container">
+                <div
+                  id="carousel-caption-1"
+                  class="carousel-caption text-end"
+                ></div>
+              </div>
+            </div>
+            <div id="carousel-item-2" class="carousel-item">
+              <div class="container">
+                <div
+                  id="carousel-caption-2"
+                  class="carousel-caption text-end"
+                ></div>
+              </div>
+            </div>
+            <div id="carousel-item-3" class="carousel-item">
+              <div class="container">
+                <div
+                  id="carousel-caption-3"
+                  class="carousel-caption text-end"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+        <!-- Cuerpo -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-9 gy-5">
+              <!-- Noticia Principal -->
+              <div id="noticiaPrincipal" class="gazette-welcome-post">
+                <!-- Tag -->
+                <div id="etiquetaPrincipal" class="gazette-post-tag"></div>
+                <!-- Leer mas -->
+              </div>
+              <div
+                class="post-continue-reading-share d-sm-flex align-items-center justify-content-between mt-30"
+              >
+                <div class="post-continue-btn">
+                  <a id="seguir-leyendo" href="#" class="font-pt"
+                    >Seguir leyendo
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <div class="post-share-btn-group">
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- Populares -->
+              <div
+                id="pop-container"
+                class="gazette-todays-post section_padding_100_50"
+              >
+                <div class="gazette-heading">
+                  <h4 id="populares">Las más Populares</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Side news -->
+            <div class="col-12 col-lg-3 col-md-6 gy-5">
+              <div class="sidebar-area">
+                <!-- Ultimas news -->
+                <div id="ultimas-container" class="breaking-news-widget">
+                  <div class="widget-title">
+                    <h5 id="ultimas">ÚLTIMAS NOTICIAS</h5>
+                  </div>
+                </div>
+
+                <!-- No te pierdas -->
+                <div id="side-news-container" class="donnot-miss-widget">
+                  <div class="widget-title">
+                    <h5>NO TE PIERDAS</h5>
+                  </div>
+                  <!-- Post -->
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div id="side-img-1" class="dont-miss-post-thumb">
+                      <!-- <img src="img/blog-img/dm-1.jpg" alt="" /> -->
+                    </div>
+                    <div id="side-content-1" class="dont-miss-post-content">
+                      <!-- <a href="#" class="font-pt">EU council reunites</a> -->
+                      <!-- <span>Nov 29, 2017</span> -->
+                    </div>
+                  </div>
+                  <!-- Post -->
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div id="side-img-2" class="dont-miss-post-thumb">
+                      <!-- <img src="img/blog-img/dm-2.jpg" alt="" /> -->
+                    </div>
+                    <div id="side-content-2" class="dont-miss-post-content">
+                      <!-- <a href="#" class="font-pt"
+                      >A new way to travel the world</a
+                    >
+                    <span>March 29, 2016</span> -->
+                    </div>
+                  </div>
+                  <!-- Post -->
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div id="side-img-3" class="dont-miss-post-thumb">
+                      <!-- <img src="img/blog-img/dm-3.jpg" alt="" /> -->
+                    </div>
+                    <div id="side-content-3" class="dont-miss-post-content">
+                      <!-- <a href="#" class="font-pt">Why choose a bank?</a>
+                    <span>March 29, 2016</span> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mosaico -->
+        <div class="gazette-heading">
+          <h4 id="mas">Más noticias</h4>
+        </div>
+        <section class="gazatte-video-post-area section_padding_100_70 bg-gray">
+          <div class="container">
+            <div id="news-grid" class="row"></div>
+          </div>
+        </section>
+      </div>
+      <!-- Volver -->
+      <div id="volv-container" class="row" style="display: none">
+        <div class="col-12">
+          <div class="gazette-pagination-area">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg justify-content-start">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    id="volver"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">Volver</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Paginacion busqueda -->
+      <div id="pag-container" class="row" style="display: none">
+        <div class="col-12">
+          <div class="gazette-pagination-area">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" id="prev" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" id="next" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="pagination pagination-lg justify-content-start">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    id="volver"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">Volver</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            class="navbar-brand mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            href="#"
+          >
+            <img
+              src="./img/website-2151053_640.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            PopNews
+          </a>
+          <span class="text-muted">© 2022 PopNews, Inc</span>
+        </div>
+
+        <div class="post-share-btn-group">
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!-- original -->
+  <!-- prueba -->
+  <body>
+    <div class="container">
+      <header>
+        <nav
+          class="navbar sticky-md-top navbar-expand-md navbar-dark bg-dark mt-2"
+          aria-label="Fourth navbar example"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./img/website-2151053_640.png"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              PopNews
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample04"
+              aria-controls="navbarsExample04"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#populares">Populares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#ultimas">Ultimas noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mas">Más noticias</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown04"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Categorías</a
+                  >
+                  <!-- business entertainment health science sports technology -->
+                  <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="business"
+                        >Negocios</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-category="entertainment"
+                        >Entretenimiento</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="health"
+                        >Salud</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="science"
+                        >Ciencia</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="sports"
+                        >Deportes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-category="technology"
+                        >Technologia</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form
+                class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+                name="formBusqueda"
+              >
+                <input
+                  type="search"
+                  name="busqueda"
+                  class="form-control"
+                  placeholder="Ingresa una palabra clave"
+                  aria-label="Search"
+                  maxlength="20"
+                  spellcheck="true"
+                  size="25"
+                />
+              </form>
+              <!-- User -->
+              <a id="user" href="#" class="nav-link text-white">
+                <i class="fa-solid fa-user-slash"></i>
+                Invitado
+              </a>
+              <button
+                id="logBtn"
+                type="button"
+                class="btn btn-success"
+                onclick="location.href = './sing_in.html'"
+              >
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main class="container mt-4">
+      <div id="main-container">
+        <!-- Carousel -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-label="Slide 1"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class=""
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class=""
+            ></button>
+          </div>
+          <div id="carousel" class="carousel-inner">
+            <div id="carousel-item-1" class="carousel-item active">
+              <div class="container">
+                <div id="carousel-caption-1" class="carousel-caption text-end">
+                  <h1>¿Qué necesita Boca para clasificar a octavos? - Olé</h1>
+                  <p>
+                    <a
+                      class="btn btn-lg btn-danger"
+                      href="https://www.ole.com.ar/boca-juniors/boca-deportivo-cali-libertadores-octavos_0_8Xr8WWKDvW.html"
+                      target="_blank"
+                      >Leer mas</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <img
+                src="https://images.ole.com.ar/2022/05/26/Jf_TuMHjy_1200x630__1.jpg"
+                class="d-block w-100 h-auto"
+              />
+            </div>
+            <div id="carousel-item-2" class="carousel-item">
+              <div class="container">
+                <div id="carousel-caption-2" class="carousel-caption text-end">
+                  <h1>
+                    Incómoda reacción de Benjamín Vicuña cuando le preguntaron
+                    por Rusherking, el nuevo novio de... - Ciudad Magazine
+                  </h1>
+                  <p>
+                    <a
+                      class="btn btn-lg btn-primary"
+                      href="https://news.google.com/__i/rss/rd/articles/CBMieWh0dHBzOi8vd3d3LmNpdWRhZC5jb20uYXIvZXNwZWN0YWN1bG9zL2luY29tb2RhLXJlYWNjaW9uLWJlbmphbWluLXZpY3VuYS1jdWFuZG8tcHJlZ3VudGFyb24tcnVzaGVya2luZy1udWV2by1ub3Zpb18xOTY2MDTSAQA?oc=5"
+                      target="_blank"
+                      >Leer mas</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <img
+                src="./img/newsPlaceholder.jpg"
+                class="d-block w-100 h-auto"
+              />
+            </div>
+            <div id="carousel-item-3" class="carousel-item">
+              <div class="container">
+                <div id="carousel-caption-3" class="carousel-caption text-end">
+                  <h1>
+                    Consumo con tarjeta de crédito: cuidado con el efecto bola
+                    de nieve - La Nueva
+                  </h1>
+                  <p>
+                    <a
+                      class="btn btn-lg btn-primary"
+                      href="https://www.lanueva.com/nota/2022-5-26-6-30-42-consumo-con-tarjeta-de-credito-cuidado-con-el-efecto-bola-de-nieve"
+                      target="_blank"
+                      >Leer mas</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <img
+                src="https://px.cdn.lanueva.com/052022/1653509968276.jpg?&amp;cw=600&amp;ch=365"
+                class="d-block w-100 h-auto"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+        <!-- Cuerpo -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-9 gy-5">
+              <!-- Noticia Principal -->
+              <div id="noticiaPrincipal" class="gazette-welcome-post">
+                <!-- Tag -->
+                <div id="etiquetaPrincipal" class="gazette-post-tag">
+                  <a href="#">business</a>
+                </div>
+                <!-- Leer mas -->
+                <h2 class="font-pt">
+                  Consumo con tarjeta de crédito: cuidado con el efecto bola de
+                  nieve - La Nueva
+                </h2>
+                <p class="gazette-post-date">2022-05-26T09:31:06Z</p>
+                <div class="blog-post-thumbnail my-5">
+                  <img
+                    src="https://px.cdn.lanueva.com/052022/1653509968276.jpg?&amp;cw=600&amp;ch=365"
+                  />
+                </div>
+                <p>
+                  Aunque no siempre se puede, evitar el pago mínimo ahorra
+                  dolores de cabeza a los castigados consumidores argentinos.
+                </p>
+              </div>
+              <div
+                class="post-continue-reading-share d-sm-flex align-items-center justify-content-between mt-30"
+              >
+                <div class="post-continue-btn">
+                  <a
+                    id="seguir-leyendo"
+                    href="https://www.lanueva.com/nota/2022-5-26-6-30-42-consumo-con-tarjeta-de-credito-cuidado-con-el-efecto-bola-de-nieve"
+                    class="font-pt"
+                    >Seguir leyendo
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <div class="post-share-btn-group">
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- Populares -->
+              <div
+                id="pop-container"
+                class="gazette-todays-post section_padding_100_50"
+              >
+                <div class="gazette-heading">
+                  <h4 id="populares">Las más Populares</h4>
+                </div>
+                <div
+                  class="gazette-single-todays-post d-md-flex align-items-start mb-5"
+                >
+                  <div class="todays-post-thumb">
+                    <img
+                      src="https://media.ambito.com/p/4559344f8e3dab64dd3fd353f09d4c13/adjuntos/239/imagenes/038/742/0038742847/1200x675/smart/ahorro-plazo-fijo.jpg"
+                    />
+                  </div>
+                  <div class="todays-post-content">
+                    <div class="gazette-post-tag"><a href="#">business</a></div>
+                    <a
+                      ><a href="#" class="font-pt mb-2"
+                        >Por la inflación, el stock de plazos fijos UVA crece
+                        25% real en el año y esperan que siga en alza -
+                        ámbito.com</a
+                      ></a
+                    ><span class="gazette-post-date mb-2"
+                      >2022-05-26T03:00:23Z</span
+                    >
+                    <p>
+                      Los depósitos que brindan cobertura contra la suba de
+                      precios se expanden mes a mes, aunque todavía representan
+                      una porción reducida de las colocaciones privadas a plazo.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="gazette-single-todays-post d-md-flex align-items-start mb-5"
+                >
+                  <div class="todays-post-thumb">
+                    <img
+                      src="https://media.tycsports.com/files/2021/11/23/362928/1-dolar.jpg"
+                    />
+                  </div>
+                  <div class="todays-post-content">
+                    <div class="gazette-post-tag"><a href="#">business</a></div>
+                    <a
+                      ><a href="#" class="font-pt mb-2"
+                        >◉ Dolar BLUE HOY: el precio este 26 de mayo y cuál es
+                        la cotización - Rumbo a Tokio</a
+                      ></a
+                    ><span class="gazette-post-date mb-2"
+                      >2022-05-26T02:36:06Z</span
+                    >
+                    <p>
+                      El precio del dólar blue y dólar oficial de hoy, 26 de
+                      mayo en la Argentina. A cuánto cotiza la divisa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Side news -->
+            <div class="col-12 col-lg-3 col-md-6 gy-5">
+              <div class="sidebar-area">
+                <!-- Ultimas news -->
+                <div id="ultimas-container" class="breaking-news-widget">
+                  <div class="widget-title">
+                    <h5 id="ultimas">Últimas Noticias</h5>
+                  </div>
+                  <div class="single-breaking-news-widget">
+                    <img
+                      src="https://px.cdn.lanueva.com/052022/1653509968276.jpg?&amp;cw=600&amp;ch=365"
+                    />
+                    <div class="breakingnews-title">
+                      <p>Ultimas Noticias</p>
+                    </div>
+                    <div
+                      class="breaking-news-heading gradient-background-overlay"
+                    >
+                      <a href="#" class="font-pt"
+                        >Consumo con tarjeta de crédito: cuidado con el efecto
+                        bola de nieve - La Nueva</a
+                      >
+                    </div>
+                  </div>
+                  <div class="single-breaking-news-widget">
+                    <img
+                      src="https://media.lacapital.com.ar/p/fc74c41d4d02648130903e726858b0d2/adjuntos/203/imagenes/100/090/0100090838/2022-05-25-julian-alvarezjpg.jpg"
+                    />
+                    <div class="breakingnews-title">
+                      <p>Ultimas Noticias</p>
+                    </div>
+                    <div
+                      class="breaking-news-heading gradient-background-overlay"
+                    >
+                      <a href="#" class="font-pt"
+                        >Julián Álvarez le hizo seis goles a Alianza Lima y
+                        rompió un récord de Nacho Scocco - La Capital</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- No te pierdas -->
+                <div id="side-news-container" class="donnot-miss-widget">
+                  <div class="widget-title">
+                    <h5>No te pierdas...</h5>
+                  </div>
+                  <!-- Post -->
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div id="side-img-1" class="dont-miss-post-thumb">
+                      <!-- <img src="img/blog-img/dm-1.jpg" alt="" /> -->
+                    </div>
+                    <div id="side-content-1" class="dont-miss-post-content">
+                      <!-- <a href="#" class="font-pt">EU council reunites</a> -->
+                      <!-- <span>Nov 29, 2017</span> -->
+                    </div>
+                  </div>
+                  <!-- Post -->
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div id="side-img-2" class="dont-miss-post-thumb">
+                      <!-- <img src="img/blog-img/dm-2.jpg" alt="" /> -->
+                    </div>
+                    <div id="side-content-2" class="dont-miss-post-content">
+                      <!-- <a href="#" class="font-pt"
+                      >A new way to travel the world</a
+                    >
+                    <span>March 29, 2016</span> -->
+                    </div>
+                  </div>
+                  <!-- Post -->
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div id="side-img-3" class="dont-miss-post-thumb">
+                      <!-- <img src="img/blog-img/dm-3.jpg" alt="" /> -->
+                    </div>
+                    <div id="side-content-3" class="dont-miss-post-content">
+                      <!-- <a href="#" class="font-pt">Why choose a bank?</a>
+                    <span>March 29, 2016</span> -->
+                    </div>
+                  </div>
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div class="dont-miss-post-thumb">
+                      <img
+                        src="https://resizer.glanacion.com/resizer/W4-z48KynCnZbEhSuiYqFG4KPv8=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/E73ASBY22NBC5CHQZGOAZT6JTQ.jpg"
+                      />
+                    </div>
+                    <div class="dont-miss-post-content">
+                      <a href="#" class="font-pt"
+                        >Boca define su clasificación: el panorama de los
+                        argentinos en la Copa Libertadores y Copa Sudamericana -
+                        LA NACION</a
+                      ><span>2022-05-26T11:36:00Z</span>
+                    </div>
+                  </div>
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div class="dont-miss-post-thumb">
+                      <img
+                        src="https://www.infobae.com/new-resizer/-vKSdqcQcGWLcjoz73E85Y-HIok=/1200x628/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/2CXJYTF4D5DZBI6QH6DVGJO7RM.jpg"
+                      />
+                    </div>
+                    <div class="dont-miss-post-content">
+                      <a href="#" class="font-pt"
+                        >La furia de Zverev contra un periodista luego de su
+                        victoria sobre Baez en Roland Garros - Infobae
+                        America</a
+                      ><span>2022-05-26T11:31:03Z</span>
+                    </div>
+                  </div>
+                  <div class="single-dont-miss-post d-flex mb-30">
+                    <div class="dont-miss-post-thumb">
+                      <img
+                        src="https://media.tycsports.com/files/2022/05/26/433024/julian-alvarez_1440x810_wmk.webp?v=1"
+                      />
+                    </div>
+                    <div class="dont-miss-post-content">
+                      <a href="#" class="font-pt"
+                        >La postura del Manchester City ante el pedido de
+                        Gallardo sobre Julián Álvarez - Rumbo a Tokio</a
+                      ><span>2022-05-26T11:20:06Z</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mosaico -->
+        <div class="gazette-heading">
+          <h4 id="mas">Más noticias</h4>
+        </div>
+        <section class="gazatte-video-post-area section_padding_100_70 bg-gray">
+          <div class="container">
+            <div id="news-grid" class="row">
+              <div class="col-12 col-md-3">
+                <div class="single-video-post">
+                  <div class="video-post-thumb">
+                    <img
+                      src="https://www.infobae.com/new-resizer/14gOc7ZrFBQX5g1lT9q9cQDQReM=/1200x628/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/7N4P6DLTW5BZNEE6H2B5UTILEM.jpg"
+                    />
+                  </div>
+                  <h5>
+                    <a href="#"
+                      >Rincones insólitos y situaciones bizarras del Conurbano
+                      captadas por Google Street View, que cumple 15 años -
+                      infobae</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="single-video-post">
+                  <div class="video-post-thumb">
+                    <img src="./img/newsPlaceholder.jpg" />
+                  </div>
+                  <h5>
+                    <a href="#"
+                      >Masacre de Texas: Estados Unidos vive todavía en el siglo
+                      XVIII - Página/12</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="single-video-post">
+                  <div class="video-post-thumb">
+                    <img
+                      src="https://www.infobae.com/new-resizer/q42NAIBtrjFagxFG-24y_ns-KYQ=/1200x628/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/WTLBFRDQ2RGD7OHRR675ZTRRUE.jpg"
+                    />
+                  </div>
+                  <h5>
+                    <a href="#"
+                      >Nueva agresión entre barristas de Racing y Deportivo Cali
+                      acaba en sangrienta escena dentro de un vagón de tren -
+                      Infobae America</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="single-video-post">
+                  <div class="video-post-thumb">
+                    <img
+                      src="https://media.ambito.com/p/4559344f8e3dab64dd3fd353f09d4c13/adjuntos/239/imagenes/038/742/0038742847/1200x675/smart/ahorro-plazo-fijo.jpg"
+                    />
+                  </div>
+                  <h5>
+                    <a href="#"
+                      >Por la inflación, el stock de plazos fijos UVA crece 25%
+                      real en el año y esperan que siga en alza - ámbito.com</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="single-video-post">
+                  <div class="video-post-thumb">
+                    <img
+                      src="https://resizer.glanacion.com/resizer/raGqegAd8i5BNxRLDe1IpWFEmaw=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/LQHK24IBPVHK5PO7Z7BN6IGVSM.jpg"
+                    />
+                  </div>
+                  <h5>
+                    <a href="#"
+                      >Tasa de Justicia: el misterio detrás del cheque de $3
+                      millones que el Presidente usó para hacerle juicio a
+                      Bullrich - LA NACION</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="single-video-post">
+                  <div class="video-post-thumb">
+                    <img
+                      src="https://tn.com.ar/resizer/zzwulWr5_dQTLcLT7LEPdwdVirA=/1023x0/smart/filters:quality(60)/thumbs.vodgc.net/1-14-VwYLff1653530582615-1653532444.jpg"
+                    />
+                  </div>
+                  <h5>
+                    <a href="#"
+                      >Independiente perdió con Ceará y quedó eliminado de la
+                      Copa Sudamericana - TN - Todo Noticias</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="single-video-post">
+                  <div class="video-post-thumb">
+                    <img
+                      src="https://tn.com.ar/resizer/FvdJa715gOjRd-KasKv8b4h83I8=/1023x0/smart/filters:quality(60)/cloudfront-us-east-1.images.arcpublishing.com/artear/FPTWE4KNIJHKPN7E7L24G2AGPY.jpg"
+                    />
+                  </div>
+                  <h5>
+                    <a href="#"
+                      >Rodríguez Larreta contestó a los memes que lo comparan
+                      con el Sr. Burns en una cuenta pro Milei - TN - Todo
+                      Noticias</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="single-video-post">
+                  <div class="video-post-thumb">
+                    <img
+                      src="https://www.infobae.com/new-resizer/XD59vmxTFqtiohbFh0Qh7fJXDZs=/1200x628/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/ODNRXCC34BCL3HUVSB4RDAHH3A.jpg"
+                    />
+                  </div>
+                  <h5>
+                    <a href="#"
+                      >El café tiene beneficios para la salud: cuál es el mejor
+                      - infobae</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Volver -->
+      <div id="volv-container" class="row" style="display: none">
+        <div class="col-12">
+          <div class="gazette-pagination-area">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg justify-content-start">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    id="volver"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">Volver</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Paginacion busqueda -->
+      <div id="pag-container" class="row" style="display: none">
+        <div class="col-12">
+          <div class="gazette-pagination-area">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" id="prev" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" id="next" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="pagination pagination-lg justify-content-start">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    id="volver"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">Volver</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            class="navbar-brand mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            href="#"
+          >
+            <img
+              src="./img/website-2151053_640.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            PopNews
+          </a>
+          <span class="text-muted">© 2022 PopNews, Inc</span>
+        </div>
+
+        <div class="post-share-btn-group">
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </footer>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/busqueda.js" type="module"></script>
+    <script src="/src/categorias.js" type="module"></script>
+    <script src="/src/news.js" type="module"></script>
+  </body>
+  <!-- categoria -->
+  <body>
+    <div class="container">
+      <header>
+        <nav
+          class="navbar sticky-md-top navbar-expand-md navbar-dark bg-dark mt-2"
+          aria-label="Fourth navbar example"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./img/website-2151053_640.png"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              PopNews
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample04"
+              aria-controls="navbarsExample04"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#populares">Populares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#ultimas">Ultimas noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mas">Más noticias</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown04"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Categorías</a
+                  >
+                  <!-- business entertainment health science sports technology -->
+                  <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="business"
+                        >Negocios</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-category="entertainment"
+                        >Entretenimiento</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="health"
+                        >Salud</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="science"
+                        >Ciencia</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="sports"
+                        >Deportes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-category="technology"
+                        >Technologia</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form
+                class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+                name="formBusqueda"
+              >
+                <input
+                  type="search"
+                  name="busqueda"
+                  class="form-control"
+                  placeholder="Ingresa una palabra clave"
+                  aria-label="Search"
+                  maxlength="20"
+                  spellcheck="true"
+                  size="25"
+                />
+              </form>
+              <!-- User -->
+              <a id="user" href="#" class="nav-link text-white">
+                <i class="fa-solid fa-user-slash"></i>
+                Invitado
+              </a>
+              <button
+                id="logBtn"
+                type="button"
+                class="btn btn-success"
+                onclick="location.href = './sing_in.html'"
+              >
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main class="container mt-4">
+      <div class="row catagory-welcome-post-area" id="main-container">
+        <div class="col-12 col-md-4">
+          <div class="gazette-welcome-post">
+            <div class="gazette-post-tag"><a href="#">Ciudad Magazine</a></div>
+            <h2 class="font-pt">
+              La fuerte frase que Barby Silenzi le habría dicho al Polaco en
+              plena separación: "Yo ya te... - Ciudad Magazine
+            </h2>
+            <p class="gazette-post-date">2022-05-26T13:34:34Z</p>
+            <div class="blog-post-thumbnail my-5">
+              <img
+                src="https://cdn.ciudad.com.ar/sites/default/files/styles/nota_portada_crop/public/nota_video/2022/05/26/barby-silenzi-el-polaco.jpg?itok=-u903WRe"
+              />
+            </div>
+            <p>
+              La bailarina contó cómo está su relación con el cantante después
+              de que anunciaran la ruptura y en Socios revelaron detalles de la
+              ruptura.
+            </p>
+            <div class="post-continue-reading-share mt-30">
+              <div class="post-continue-btn">
+                <a
+                  class="font-pt"
+                  href="https://www.ciudad.com.ar/espectaculos/fuerte-frase-barby-silenzi-habria-dicho-polaco-plena-separacion-yo-ya-espere_196615"
+                  target="_blank"
+                  >Leer mas<i class="fa fa-chevron-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="gazette-welcome-post">
+            <div class="gazette-post-tag">
+              <a href="#">Ahoraargentina.com.ar</a>
+            </div>
+            <h2 class="font-pt">
+              El gesto de Benjamín Vicuña que conmovió a Pampita - Ahora
+              Argentina
+            </h2>
+            <p class="gazette-post-date">2022-05-26T13:22:00Z</p>
+            <div class="blog-post-thumbnail my-5">
+              <img
+                src="https://www.ahoraargentina.com.ar/u/fotografias/m/2022/5/26/f1280x720-64305_195980_5030.jpeg"
+              />
+            </div>
+            <p>La publicación de Benjamín Vicuña.</p>
+            <div class="post-continue-reading-share mt-30">
+              <div class="post-continue-btn">
+                <a
+                  class="font-pt"
+                  href="https://www.ahoraargentina.com.ar/entretenimiento/2022/5/26/el-gesto-de-benjamin-vicuna-que-conmovio-pampita-17208.html"
+                  target="_blank"
+                  >Leer mas<i class="fa fa-chevron-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="gazette-welcome-post">
+            <div class="gazette-post-tag"><a href="#">A24.com</a></div>
+            <h2 class="font-pt">
+              El mensaje de Sabrina Garciarena a Facundo Arana tras la dura
+              acusación de Romina Gaetani - A24.com
+            </h2>
+            <p class="gazette-post-date">2022-05-26T12:57:42Z</p>
+            <div class="blog-post-thumbnail my-5">
+              <img
+                src="https://media.a24.com/p/b6d6ede3b8940223211cec8deccf7ac3/adjuntos/296/imagenes/008/997/0008997823/1200x675/smart/facundo-arana.jpg"
+              />
+            </div>
+            <p>
+              En medio de su polémica con Romina Gaetani, Sabrina Garciarena
+              publicó un mensajes en las redes sociales para Facundo Arana.
+            </p>
+            <div class="post-continue-reading-share mt-30">
+              <div class="post-continue-btn">
+                <a
+                  class="font-pt"
+                  href="https://www.a24.com/primiciasya/el-mensaje-sabrina-garciarena-facundo-arana-la-dura-acusacion-romina-gaetani-n1019354"
+                  target="_blank"
+                  >Leer mas<i class="fa fa-chevron-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="gazette-welcome-post">
+            <div class="gazette-post-tag"><a href="#">Infobae</a></div>
+            <h2 class="font-pt">
+              Marian Farjat reveló un fuerte episodio que vivió con Martín
+              Salwe: “No me dejaba bajar del auto” - infobae
+            </h2>
+            <p class="gazette-post-date">2022-05-26T12:55:47Z</p>
+            <div class="blog-post-thumbnail my-5">
+              <img
+                src="https://www.infobae.com/new-resizer/tcaJkHkLELC3gHzATApeJWVZmB0=/1200x628/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/BY6NSGYPQBB5DEGL7NJJUQCUJU.jpg"
+              />
+            </div>
+            <p>
+              Tras ver el testimonio de Leo García en Intrusos, la ex Gran
+              Hermano utilizó su cuenta de Twitter para contar en detalle una
+              situación incómoda que vivió con el participante de El Hotel de
+              los Famosos
+            </p>
+            <div class="post-continue-reading-share mt-30">
+              <div class="post-continue-btn">
+                <a
+                  class="font-pt"
+                  href="https://www.infobae.com/teleshow/2022/05/26/marian-farjat-revelo-un-fuerte-episodio-que-vivio-con-martin-salwe-no-me-dejaba-bajar-del-auto/"
+                  target="_blank"
+                  >Leer mas<i class="fa fa-chevron-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="gazette-welcome-post">
+            <div class="gazette-post-tag">
+              <a href="#">TN - Todo Noticias</a>
+            </div>
+            <h2 class="font-pt">
+              Jimena Barón se fue descalza y sin pantalón de su cumpleaños - TN
+              - Todo Noticias
+            </h2>
+            <p class="gazette-post-date">2022-05-26T12:52:20Z</p>
+            <div class="blog-post-thumbnail my-5">
+              <img
+                src="https://tn.com.ar/resizer/TNHXihfAGzbz7Njo8QxYGPaUxRE=/1023x0/smart/filters:quality(60)/thumbs.vodgc.net/1-181-axiECa1653564182889-1653564636.jpg"
+              />
+            </div>
+            <p>
+              La actriz y cantante festejó con amigos y se mostró muy enamorada
+              de su novio Matías Palleiro.
+            </p>
+            <div class="post-continue-reading-share mt-30">
+              <div class="post-continue-btn">
+                <a
+                  class="font-pt"
+                  href="https://tn.com.ar/show/famosos/2022/05/26/jimena-baron-se-fue-descalza-y-sin-pantalon-de-su-cumpleanos-creo-que-estuvo-re-bueno/"
+                  target="_blank"
+                  >Leer mas<i class="fa fa-chevron-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="gazette-welcome-post">
+            <div class="gazette-post-tag"><a href="#">Ciudad Magazine</a></div>
+            <h2 class="font-pt">
+              Tajante respuesta de Juana Repetto cuando le preguntaron si se
+              separó de su marido - Ciudad Magazine
+            </h2>
+            <p class="gazette-post-date">2022-05-26T11:34:34Z</p>
+            <div class="blog-post-thumbnail my-5">
+              <img
+                src="https://cdn.ciudad.com.ar/sites/default/files/styles/nota_portada_crop/public/nota/2022/05/26/repetto.jpg?itok=ONNfQCrQ"
+              />
+            </div>
+            <p>
+              La hija de&nbsp;Reina Reech&nbsp;aclaró mediante una contundente
+              imagen si sigue o no en pareja con&nbsp;Sebastián Graviotto.
+            </p>
+            <div class="post-continue-reading-share mt-30">
+              <div class="post-continue-btn">
+                <a
+                  class="font-pt"
+                  href="https://www.ciudad.com.ar/espectaculos/tajante-respuesta-juana-repetto-cuando-preguntaron-si-separo-marido_196601"
+                  target="_blank"
+                  >Leer mas<i class="fa fa-chevron-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Volver -->
+      <div id="volv-container" class="row" style="display: block">
+        <div class="col-12">
+          <div class="gazette-pagination-area">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg justify-content-start">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    id="volver"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">Volver</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Paginacion busqueda -->
+      <div id="pag-container" class="row" style="display: block">
+        <div class="col-12">
+          <div class="gazette-pagination-area">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" id="prev" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" id="next" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="pagination pagination-lg justify-content-start">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    id="volver"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">Volver</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            class="navbar-brand mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            href="#"
+          >
+            <img
+              src="./img/website-2151053_640.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            PopNews
+          </a>
+          <span class="text-muted">© 2022 PopNews, Inc</span>
+        </div>
+
+        <div class="post-share-btn-group">
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </footer>
+    </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName('link'));
+            var head = document.getElementsByTagName('head')[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != 'string') ||
+                rel.length == 0 ||
+                rel.toLowerCase() == 'stylesheet'
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                elem.href =
+                  url +
+                  (url.indexOf('?') >= 0 ? '&' : '?') +
+                  '_cacheOverride=' +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+          var address =
+            protocol + window.location.host + window.location.pathname + '/ws';
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == 'reload') window.location.reload();
+            else if (msg.data == 'refreshcss') refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')
+          ) {
+            console.log('Live reload enabled.');
+            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+          }
+        })();
+      } else {
+        console.error(
+          'Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.'
+        );
+      }
+      // ]]>
+    </script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/busqueda.js" type="module"></script>
+    <script src="/src/categorias.js" type="module"></script>
+    <script src="/src/news.js" type="module"></script>
+  </body>
+  <!-- noticia -->
+  <body>
+    <div class="container">
+      <header>
+        <nav
+          class="navbar sticky-md-top navbar-expand-md navbar-dark bg-dark mt-2"
+          aria-label="Fourth navbar example"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./img/website-2151053_640.png"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              PopNews
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample04"
+              aria-controls="navbarsExample04"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#populares">Populares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#ultimas">Ultimas noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mas">Más noticias</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown04"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Categorías</a
+                  >
+                  <!-- business entertainment health science sports technology -->
+                  <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="business"
+                        >Negocios</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-category="entertainment"
+                        >Entretenimiento</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="health"
+                        >Salud</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="science"
+                        >Ciencia</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-category="sports"
+                        >Deportes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-category="technology"
+                        >Technologia</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form
+                class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+                name="formBusqueda"
+              >
+                <input
+                  type="search"
+                  name="busqueda"
+                  class="form-control"
+                  placeholder="Ingresa una palabra clave"
+                  aria-label="Search"
+                  maxlength="20"
+                  spellcheck="true"
+                  size="25"
+                />
+              </form>
+              <!-- User -->
+              <a id="user" href="#" class="nav-link text-white">
+                <i class="fa-solid fa-user-slash"></i>
+                Invitado
+              </a>
+              <button
+                id="logBtn"
+                type="button"
+                class="btn btn-success"
+                onclick="location.href = './sing_in.html'"
+              >
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main class="container mt-4">
+      <div class="row catagory-welcome-post-area" id="main-container">
+        <div
+          class="single-post-title bg-img background-overlay"
+          style="background-image: url('./img/bn-1.jpg')"
+        >
+          <div class="container h-50">
+            <div class="row h-50 align-items-end">
+              <div class="col-12">
+                <div class="single-post-title-content">
+                  <div class="gazette-post-tag"><a href="#">Noticia</a></div>
+                  <h2>
+                    Dr. Rafaél Santini, MD, nuevo presidente de la Sociedad de
+                    Cirugía Vascular y Endovascular de Puerto Rico - Medicina y
+                    Salud Publica
+                  </h2>
+                  <p>2022-05-26T18:55:00Z</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-post-contents">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8">
+                <div class="single-post-text">
+                  <p>
+                    El cirujano vascular y endovascular "Board Certified"
+                    asumirá este cargo entre el periodo de 2022-2024.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="single-post-thumb">
+                  <img
+                    src="https://medicinaysaludpublica.blob.core.windows.net.optimalcdn.com/images/2022/01/28/sacs---2022-01-28t180210.221.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post-continue-btn">
+          <a
+            class="font-pt"
+            href="https://medicinaysaludpublica.com/noticias/administracion-y-gerencia-medicina/dr-rafael-santini-md-nuevo-presidente-de-la-sociedad-de-cirugia-vascular-y-endovascular-de-puerto-rico/14271"
+            target="_blank"
+            >Leer mas<i class="fa fa-chevron-right" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+      <!-- Volver -->
+      <div id="volv-container" class="row" style="display: block">
+        <div class="col-12">
+          <div class="gazette-pagination-area">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg justify-content-start">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    id="volver"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">Volver</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Paginacion busqueda -->
+      <div id="pag-container" class="row" style="display: none">
+        <div class="col-12">
+          <div class="gazette-pagination-area">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" id="prev" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" id="next" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="pagination pagination-lg justify-content-start">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    id="volver"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">Volver</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            class="navbar-brand mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            href="#"
+          >
+            <img
+              src="./img/website-2151053_640.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            PopNews
+          </a>
+          <span class="text-muted">© 2022 PopNews, Inc</span>
+        </div>
+
+        <div class="post-share-btn-group">
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/news.js"></script>
+</html>
