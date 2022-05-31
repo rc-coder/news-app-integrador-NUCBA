@@ -86,7 +86,7 @@ const showCarousel = async (carouselItem, carouselCaption, pagina) => {
   const newsInfo = {
     img: news.urlToImage,
     titulo: news.title,
-    fecha: news.publishedAt,
+    fecha: news.publishedAt.split('T')[0],
     descripcion: news.description,
     url: news.url,
     source: news.source.name,
@@ -128,7 +128,7 @@ const showNewsPrincipal = async () => {
   const newsInfo = {
     img: news.urlToImage,
     titulo: news.title,
-    fecha: news.publishedAt,
+    fecha: news.publishedAt.split('T')[0],
     descripcion: news.description,
     url: news.url,
     source: news.source.name,
@@ -177,7 +177,7 @@ const showPopNews = async () => {
     const newsInfo = {
       img: article.urlToImage,
       titulo: article.title,
-      fecha: article.publishedAt,
+      fecha: article.publishedAt.split('T')[0],
       descripcion: article.description,
       url: article.url,
       source: article.source.name,
@@ -248,7 +248,7 @@ const showUltimasNews = async () => {
     const newsInfo = {
       img: article.urlToImage,
       titulo: article.title,
-      fecha: article.publishedAt,
+      fecha: article.publishedAt.split('T')[0],
       descripcion: article.description,
       url: article.url,
       source: article.source.name,
@@ -301,7 +301,7 @@ const showSideNews = async () => {
     const newsInfo = {
       img: article.urlToImage,
       titulo: article.title,
-      fecha: article.publishedAt,
+      fecha: article.publishedAt.split('T')[0],
       descripcion: article.description,
       url: article.url,
       source: article.source.name,
@@ -354,7 +354,7 @@ const showNewsGrid = async () => {
     const newsInfo = {
       img: article.urlToImage,
       titulo: article.title,
-      fecha: article.publishedAt,
+      fecha: article.publishedAt.split('T')[0],
       descripcion: article.description,
       url: article.url,
       source: article.source.name,
@@ -401,32 +401,6 @@ volverBtn.addEventListener('click', () => {
   pag_container.style.display = 'none';
   volv_container.style.display = 'none';
 });
-
-//Dropdown - categorias
-
-// dropdown.addEventListener('click', ({ target }) => {
-//   const categoria = {
-//     eng: target.dataset.category,
-//     esp: target.innerHTML,
-//   };
-//   localStorage.setItem('Categoria', JSON.stringify(categoria));
-// });
-
-//Busqueda
-
-// form_busqueda.addEventListener('submit', (e) => {
-//   e.preventDefault();
-
-//   let inputBusqueda = e.target.value;
-
-//   if (inputBusqueda === '') {
-//     return;
-//   }
-//   main.innerHTML = '';
-//   pag_container.style.display = 'block';
-
-//   getEveryNews(inputBusqueda);
-// });
 
 // init
 const init = () => {

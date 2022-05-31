@@ -86,7 +86,7 @@ const renderNews = (article) => {
 
   const fecha = document.createElement('p');
   fecha.classList = 'gazette-post-date';
-  fecha.innerHTML = article.publishedAt;
+  fecha.innerHTML = article.publishedAt.split('T')[0];
   post.appendChild(fecha);
 
   const imgDiv = document.createElement('div');
@@ -111,29 +111,5 @@ const renderNews = (article) => {
   ></a>`;
   seguir.appendChild(button);
 };
-
-// const getEveryNews = async () => {
-//   const response = await fetch(
-//     `https://newsapi.org/v2/everything?q=${terminoBusqueda}&language=es&sortBy=popularity&pageSize=6&page=1`,
-//     {
-//       headers: {
-//         'X-Api-Key': `${apiKey}`,
-//       },
-//     }
-//   );
-//   const data = await response.json();
-//   const news = data;
-//   console.log(news);
-//   return news;
-// };
-
-//Fetch
-
-// const fetchNews = async () => {
-//   let news = await getCategoryNews(categoria.eng, 6, pagina);
-//   news.forEach((article) => {
-//     renderNews(article);
-//   });
-// };
 
 export { renderNews };
