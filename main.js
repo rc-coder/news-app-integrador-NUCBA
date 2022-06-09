@@ -36,7 +36,7 @@ let apiKey = 'dc42d3e395de4b70 96ae3ed808bf75bc';
 let urlTop = 'https://newsapi.org/v2/top-headlines?country=ar';
 
 fetch(
-  'https://gnews.io/api/v4/search?q=example&token=472b1e12ab8c9d6422507530da43b415'
+  'http://api.mediastack.com/v1/news?access_key=725f80f2546c343ee79b4bc6c1bef27b'
 )
   .then(function (response) {
     return response.json();
