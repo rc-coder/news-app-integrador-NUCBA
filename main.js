@@ -31,9 +31,19 @@ const log_btn = document.querySelector('#logBtn');
 
 //Elementos de la API
 
-let apiKey = 'dc42d3e395de4b7096ae3ed808bf75bc';
+let apiKey = 'dc42d3e395de4b70 96ae3ed808bf75bc';
 
 let urlTop = 'https://newsapi.org/v2/top-headlines?country=ar';
+
+fetch(
+  'https://gnews.io/api/v4/search?q=example&token=472b1e12ab8c9d6422507530da43b415'
+)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  });
 
 // Fetch News
 
