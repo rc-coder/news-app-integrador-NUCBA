@@ -19,6 +19,7 @@ form_busqueda.addEventListener('submit', async (e) => {
   }
   main.innerHTML = '';
   pag_container.style.display = 'block';
+  pagina = 1;
 
   const fetchNews = async () => {
     let newsData = await getEveryNews(input, pagina);

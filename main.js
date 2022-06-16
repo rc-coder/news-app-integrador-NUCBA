@@ -31,19 +31,9 @@ const log_btn = document.querySelector('#logBtn');
 
 //Elementos de la API
 
-let apiKey = 'dc42d3e395de4b70 96ae3ed808bf75bc';
+let apiKey = 'dc42d3e395de4b7096ae3ed808bf75bc';
 
 let urlTop = 'https://newsapi.org/v2/top-headlines?country=ar';
-
-fetch(
-  'http://api.mediastack.com/v1/news?access_key=725f80f2546c343ee79b4bc6c1bef27b'
-)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data);
-  });
 
 // Fetch News
 
